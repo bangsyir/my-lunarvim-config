@@ -81,7 +81,7 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 }
 
 -- diagnostics float
-lvim.lsp.diagnostics.virtual_text = false
+vim.diagnostic.config({virtual_text = false})
 vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
